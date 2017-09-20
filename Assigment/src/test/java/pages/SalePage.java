@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import testcases.Results;
 import tsUtilities.SeleniumUtils;
 
+//mergeconflict
 public class SalePage {
 
 	public static SeleniumUtils selenium;
