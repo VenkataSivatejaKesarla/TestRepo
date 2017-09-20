@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Html Reports  - Feature: To test my cucumber test is running</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation" ><a href="step-overview.html">Steps</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>cucumber-jvm-example</td>
+                          <td>1</td>
+                        <td>12 Sep 2017, 00:35</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Feature Report</h2>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        <thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="7">Steps</th>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th>Total</th>
+    <th>Passed</th>
+    <th>Failed</th>
+    <th>Total</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="missing">Missing</th>
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+        <tbody>
+        <tr>
+          <td class="tagname">To test my cucumber test is running</td>
+          <td>2</td>
+          <td>2</td>
+          <td>0</td>
+          <td>9</td>
+          <td>9</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="duration" data-value="231480637045">3m 51s 480ms</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+  </div>
+
+        
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">To test my cucumber test is running</span>
+  
+
+  </div>
+
+        <div class="description indention">I want to run a sample feature file.</div>
+
+        <div class="elements inner-level">
+          
+  <div class="element">
+    
+    
+<div class="tags indention">
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element--1994109915">
+      
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Search By A Property</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </span>
+    <div class="description indention"></div>
+
+    <div id="element--1994109915" class="collapse collapsable-details ">
+      
+  <div class="inner-level hooks-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-1979825302">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-1979825302" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">Results.before(Scenario)</span>
+                        
+  <span class="lead-duration duration">003ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+      
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-43473566">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-43473566" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I Navigate to "http://propertyguru.com.sg"</span>
+  
+  <span class="lead-duration duration">9s 099ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+        <div data-toggle="collapse" class="collapsable-control" data-target="#msg--1537230980">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg--1537230980" class="collapse collapsable-details">
+          <pre><span style='float: left;'>Dispaly of elementBy.xpath: //input[@placeholder='Type or Select Location']</span><span style='float: right;color:green;font-weight:bold;'>Pass</span><br></pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I Search for "Marina" and Select "Marina Bay Residences"</span>
+  
+  <span class="lead-duration duration">4s 505ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click on Search with maximum floor area "3000"</span>
+  
+  <span class="lead-duration duration">8s 243ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+        <div data-toggle="collapse" class="collapsable-control" data-target="#msg--1076080763">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg--1076080763" class="collapse collapsable-details">
+          <pre><span style='float: left;'>Dispaly of elementBy.xpath: //ul[@class='listing-items']</span><span style='float: right;color:green;font-weight:bold;'>Pass</span><br></pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see all listings displayed are with in search criteria</span>
+  
+  <span class="lead-duration duration">1m 10s 119ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+        <div data-toggle="collapse" class="collapsable-control" data-target="#msg--635738148">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg--635738148" class="collapse collapsable-details">
+          <pre><span style='float: left;'>Page No:1Verify if the search results are from :Marina Bay Residences</span><span style='float: right;color:green;font-weight:bold;'>Pass</span><br></pre>
+        </div>
+      </div>
+          <div class="output indention">
+        <div data-toggle="collapse" class="collapsable-control" data-target="#msg-2045548575">
+                    <a>Output 2</a>
+        </div>
+        <div id="msg-2045548575" class="collapse collapsable-details">
+          <pre><span style='float: left;'>Page No:1Verify all the search results are with in :3000Sqft</span><span style='float: right;color:green;font-weight:bold;'>Pass</span><br></pre>
+        </div>
+      </div>
+          <div class="output indention">
+        <div data-toggle="collapse" class="collapsable-control" data-target="#msg-1717050683">
+                    <a>Output 3</a>
+        </div>
+        <div id="msg-1717050683" class="collapse collapsable-details">
+          <pre><span style='float: left;'>Page No:2Verify if the search results are from :Marina Bay Residences</span><span style='float: right;color:green;font-weight:bold;'>Pass</span><br></pre>
+        </div>
+      </div>
+          <div class="output indention">
+        <div data-toggle="collapse" class="collapsable-control" data-target="#msg-1773112288">
+                    <a>Output 4</a>
+        </div>
+        <div id="msg-1773112288" class="collapse collapsable-details">
+          <pre><span style='float: left;'>Page No:2Verify all the search results are with in :3000Sqft</span><span style='float: right;color:green;font-weight:bold;'>Pass</span><br></pre>
+        </div>
+      </div>
+          <div class="output indention">
+        <div data-toggle="collapse" class="collapsable-control" data-target="#msg--225127782">
+                    <a>Output 5</a>
+        </div>
+        <div id="msg--225127782" class="collapse collapsable-details">
+          <pre><span style='float: left;'>Page No:3Verify if the search results are from :Marina Bay Residences</span><span style='float: right;color:green;font-weight:bold;'>Pass</span><br></pre>
+        </div>
+      </div>
+          <div class="output indention">
+        <div data-toggle="collapse" class="collapsable-control" data-target="#msg-1500676001">
+                    <a>Output 6</a>
+        </div>
+        <div id="msg-1500676001" class="collapse collapsable-details">
+          <pre><span style='float: left;'>Page No:3Verify all the search results are with in :3000Sqft</span><span style='float: right;color:green;font-weight:bold;'>Pass</span><br></pre>
+        </div>
+      </div>
+          <div class="output indention">
+        <div data-toggle="collapse" class="collapsable-control" data-target="#msg-2127661049">
+                    <a>Output 7</a>
+        </div>
+        <div id="msg-2127661049" class="collapse collapsable-details">
+          <pre><span style='float: left;'>Page No:4Verify if the search results are from :Marina Bay Residences</span><span style='float: right;color:green;font-weight:bold;'>Pass</span><br></pre>
+        </div>
+      </div>
+          <div class="output indention">
+        <div data-toggle="collapse" class="collapsable-control" data-target="#msg-1228239714">
+                    <a>Output 8</a>
+        </div>
+        <div id="msg-1228239714" class="collapse collapsable-details">
+          <pre><span style='float: left;'>Page No:4Verify all the search results are with in :3000Sqft</span><span style='float: right;color:green;font-weight:bold;'>Pass</span><br></pre>
+        </div>
+      </div>
+          <div class="output indention">
+        <div data-toggle="collapse" class="collapsable-control" data-target="#msg-185482584">
+                    <a>Output 9</a>
+        </div>
+        <div id="msg-185482584" class="collapse collapsable-details">
+          <pre><span style='float: left;'>Page No:5Verify if the search results are from :Marina Bay Residences</span><span style='float: right;color:green;font-weight:bold;'>Pass</span><br></pre>
+        </div>
+      </div>
+          <div class="output indention">
+        <div data-toggle="collapse" class="collapsable-control" data-target="#msg-955803427">
+                    <a>Output 10</a>
+        </div>
+        <div id="msg-955803427" class="collapse collapsable-details">
+          <pre><span style='float: left;'>Page No:5Verify all the search results are with in :3000Sqft</span><span style='float: right;color:green;font-weight:bold;'>Pass</span><br></pre>
+        </div>
+      </div>
+          <div class="output indention">
+        <div data-toggle="collapse" class="collapsable-control" data-target="#msg--1756695881">
+                    <a>Output 11</a>
+        </div>
+        <div id="msg--1756695881" class="collapse collapsable-details">
+          <pre><span style='float: left;'>Page No:6Verify if the search results are from :Marina Bay Residences</span><span style='float: right;color:green;font-weight:bold;'>Pass</span><br></pre>
+        </div>
+      </div>
+          <div class="output indention">
+        <div data-toggle="collapse" class="collapsable-control" data-target="#msg-683367140">
+                    <a>Output 12</a>
+        </div>
+        <div id="msg-683367140" class="collapse collapsable-details">
+          <pre><span style='float: left;'>Page No:6Verify all the search results are with in :3000Sqft</span><span style='float: right;color:green;font-weight:bold;'>Pass</span><br></pre>
+        </div>
+      </div>
+          <div class="output indention">
+        <div data-toggle="collapse" class="collapsable-control" data-target="#msg-596092950">
+                    <a>Output 13</a>
+        </div>
+        <div id="msg-596092950" class="collapse collapsable-details">
+          <pre><span style='float: left;'>Page No:7Verify if the search results are from :Marina Bay Residences</span><span style='float: right;color:green;font-weight:bold;'>Pass</span><br></pre>
+        </div>
+      </div>
+          <div class="output indention">
+        <div data-toggle="collapse" class="collapsable-control" data-target="#msg-410930853">
+                    <a>Output 14</a>
+        </div>
+        <div id="msg-410930853" class="collapse collapsable-details">
+          <pre><span style='float: left;'>Page No:7Verify all the search results are with in :3000Sqft</span><span style='float: right;color:green;font-weight:bold;'>Pass</span><br></pre>
+        </div>
+      </div>
+          <div class="output indention">
+        <div data-toggle="collapse" class="collapsable-control" data-target="#msg--1346085515">
+                    <a>Output 15</a>
+        </div>
+        <div id="msg--1346085515" class="collapse collapsable-details">
+          <pre><span style='float: left;'>Page No:8Verify if the search results are from :Marina Bay Residences</span><span style='float: right;color:green;font-weight:bold;'>Pass</span><br></pre>
+        </div>
+      </div>
+          <div class="output indention">
+        <div data-toggle="collapse" class="collapsable-control" data-target="#msg-138494566">
+                    <a>Output 16</a>
+        </div>
+        <div id="msg-138494566" class="collapse collapsable-details">
+          <pre><span style='float: left;'>Page No:8Verify all the search results are with in :3000Sqft</span><span style='float: right;color:green;font-weight:bold;'>Pass</span><br></pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+      
+  <div class="inner-level hooks-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-1392482765">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-1392482765" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Results.embedScreenshot(Scenario)</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+    </div>
+  </div>
+  <div class="element">
+    
+    
+<div class="tags indention">
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element--593518378">
+      
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Verify	the	image	displayed	on	listing	details	page</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </span>
+    <div class="description indention"></div>
+
+    <div id="element--593518378" class="collapse collapsable-details ">
+      
+  <div class="inner-level hooks-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2070372626">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-2070372626" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">Results.before(Scenario)</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+      
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-1405548909">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-1405548909" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I Navigate to "http://propertyguru.com.sg"</span>
+  
+  <span class="lead-duration duration">7s 395ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+        <div data-toggle="collapse" class="collapsable-control" data-target="#msg--1537230980">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg--1537230980" class="collapse collapsable-details">
+          <pre><span style='float: left;'>Dispaly of elementBy.xpath: //input[@placeholder='Type or Select Location']</span><span style='float: right;color:green;font-weight:bold;'>Pass</span><br></pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I Select the Listing Type as "Rent"</span>
+  
+  <span class="lead-duration duration">2s 735ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I Select the maximum price as "15,000"</span>
+  
+  <span class="lead-duration duration">5s 950ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click on Search with photos option</span>
+  
+  <span class="lead-duration duration">16s 984ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+        <div data-toggle="collapse" class="collapsable-control" data-target="#msg--1076080763">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg--1076080763" class="collapse collapsable-details">
+          <pre><span style='float: left;'>Dispaly of elementBy.xpath: //ul[@class='listing-items']</span><span style='float: right;color:green;font-weight:bold;'>Pass</span><br></pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">All the images in first listing should display properly</span>
+  
+  <span class="lead-duration duration">1m 46s 445ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+        <div data-toggle="collapse" class="collapsable-control" data-target="#msg-1972556666">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-1972556666" class="collapse collapsable-details">
+          <pre><span style='float: left;'>Image validation is successful forhttps://sg2-cdn.pgimgs.com/listing/20866777/UPHO.94035849.V800/Riverbank-at-Fernvale-Seletar-Yio-Chu-Kang-Singapore.jpg</span><span style='float: right;color:green;font-weight:bold;'>Pass</span><br></pre>
+        </div>
+      </div>
+          <div class="output indention">
+        <div data-toggle="collapse" class="collapsable-control" data-target="#msg--801802051">
+                    <a>Output 2</a>
+        </div>
+        <div id="msg--801802051" class="collapse collapsable-details">
+          <pre><span style='float: left;'>Image validation is successful forhttps://sg1-cdn.pgimgs.com/listing/20866777/UPHO.94035858.V800/Riverbank-at-Fernvale-Seletar-Yio-Chu-Kang-Singapore.jpg</span><span style='float: right;color:green;font-weight:bold;'>Pass</span><br></pre>
+        </div>
+      </div>
+          <div class="output indention">
+        <div data-toggle="collapse" class="collapsable-control" data-target="#msg-265861892">
+                    <a>Output 3</a>
+        </div>
+        <div id="msg-265861892" class="collapse collapsable-details">
+          <pre><span style='float: left;'>Image validation is successful forhttps://sg2-cdn.pgimgs.com/listing/20866777/UPHO.94035861.V800/Riverbank-at-Fernvale-Seletar-Yio-Chu-Kang-Singapore.jpg</span><span style='float: right;color:green;font-weight:bold;'>Pass</span><br></pre>
+        </div>
+      </div>
+          <div class="output indention">
+        <div data-toggle="collapse" class="collapsable-control" data-target="#msg--686953473">
+                    <a>Output 4</a>
+        </div>
+        <div id="msg--686953473" class="collapse collapsable-details">
+          <pre><span style='float: left;'>Image validation is successful forhttps://sg2-cdn.pgimgs.com/property/21835/PPHO.44183999.V800/Riverbank-at-Fernvale-Seletar-Yio-Chu-Kang-Singapore.jpg</span><span style='float: right;color:green;font-weight:bold;'>Pass</span><br></pre>
+        </div>
+      </div>
+          <div class="output indention">
+        <div data-toggle="collapse" class="collapsable-control" data-target="#msg-1523147562">
+                    <a>Output 5</a>
+        </div>
+        <div id="msg-1523147562" class="collapse collapsable-details">
+          <pre><span style='float: left;'>Image validation is successful forhttps://sg1-cdn.pgimgs.com/property/21835/PPHO.44184000.V800/Riverbank-at-Fernvale-Seletar-Yio-Chu-Kang-Singapore.jpg</span><span style='float: right;color:green;font-weight:bold;'>Pass</span><br></pre>
+        </div>
+      </div>
+          <div class="output indention">
+        <div data-toggle="collapse" class="collapsable-control" data-target="#msg-1128948712">
+                    <a>Output 6</a>
+        </div>
+        <div id="msg-1128948712" class="collapse collapsable-details">
+          <pre><span style='float: left;'>Image validation is successful forhttps://sg2-cdn.pgimgs.com/property/21835/PPHO.44184001.V800/Riverbank-at-Fernvale-Seletar-Yio-Chu-Kang-Singapore.jpg</span><span style='float: right;color:green;font-weight:bold;'>Pass</span><br></pre>
+        </div>
+      </div>
+          <div class="output indention">
+        <div data-toggle="collapse" class="collapsable-control" data-target="#msg--492339806">
+                    <a>Output 7</a>
+        </div>
+        <div id="msg--492339806" class="collapse collapsable-details">
+          <pre><span style='float: left;'>Image validation is successful forhttps://sg2-cdn.pgimgs.com/property/21835/PPHO.44184007.V800/Riverbank-at-Fernvale-Seletar-Yio-Chu-Kang-Singapore.jpg</span><span style='float: right;color:green;font-weight:bold;'>Pass</span><br></pre>
+        </div>
+      </div>
+          <div class="output indention">
+        <div data-toggle="collapse" class="collapsable-control" data-target="#msg--638570462">
+                    <a>Output 8</a>
+        </div>
+        <div id="msg--638570462" class="collapse collapsable-details">
+          <pre><span style='float: left;'>Image validation is successful forhttps://sg1-cdn.pgimgs.com/property/21835/PPHO.44184008.V800/Riverbank-at-Fernvale-Seletar-Yio-Chu-Kang-Singapore.jpg</span><span style='float: right;color:green;font-weight:bold;'>Pass</span><br></pre>
+        </div>
+      </div>
+          <div class="output indention">
+        <div data-toggle="collapse" class="collapsable-control" data-target="#msg--1032769312">
+                    <a>Output 9</a>
+        </div>
+        <div id="msg--1032769312" class="collapse collapsable-details">
+          <pre><span style='float: left;'>Image validation is successful forhttps://sg2-cdn.pgimgs.com/property/21835/PPHO.44184009.V800/Riverbank-at-Fernvale-Seletar-Yio-Chu-Kang-Singapore.jpg</span><span style='float: right;color:green;font-weight:bold;'>Pass</span><br></pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+      
+  <div class="inner-level hooks-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-488422671">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-488422671" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">Results.embedScreenshot(Scenario)</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+    </div>
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+      <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+      <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Cucumber-JVM Reports</a>
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

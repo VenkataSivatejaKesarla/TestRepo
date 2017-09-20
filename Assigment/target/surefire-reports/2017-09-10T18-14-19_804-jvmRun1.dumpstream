@@ -1,0 +1,864 @@
+# Created on 2017-09-10T18:15:16.923
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:386)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+# Created on 2017-09-10T18:15:20.719
+Unexpected IOException with stream: Sep 10, 2017 6:15:20 PM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.xpath: //pre[contains(.,'Marina Bay Residences')])
+org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=61.0.3163.79)
+  (Driver info: chromedriver=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'VENKAT-PC', ip: '192.168.0.100', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8), userDataDir=C:\Users\venkat\AppData\Local\Temp\scoped_dir5800_11553}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=61.0.3163.79, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 83423ecbd3d905157eaeae25a243ba7b
+*** Element info: {Using=xpath, value=//pre[contains(.,'Marina Bay Residences')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:443)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:522)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:404)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at tsUtilities.SeleniumUtils.isElementPresent(SeleniumUtils.java:238)
+	at tsUtilities.SeleniumUtils.verifyObjectExists(SeleniumUtils.java:212)
+	at testcases.StepDefintions.i_Search_for_and_Select(StepDefintions.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:272)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+
+
+# Created on 2017-09-10T18:15:20.723
+Unexpected IOException with stream: chrome not reachable
+  (Session info: chrome=61.0.3163.79)
+  (Driver info: chromedriver=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'VENKAT-PC', ip: '192.168.0.100', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8), userDataDir=C:\Users\venkat\AppData\Local\Temp\scoped_dir5800_11553}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=61.0.3163.79, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 83423ecbd3d905157eaeae25a243ba7b
+*** Element info: {Using=xpath, value=//pre[contains(.,'Marina Bay Residences')]}
+
+
+# Created on 2017-09-10T18:15:24.736
+Unexpected IOException with stream: chrome not reachable
+  (Session info: chrome=61.0.3163.79)
+  (Driver info: chromedriver=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'VENKAT-PC', ip: '192.168.0.100', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8), userDataDir=C:\Users\venkat\AppData\Local\Temp\scoped_dir5800_11553}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=61.0.3163.79, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 83423ecbd3d905157eaeae25a243ba7b
+*** Element info: {Using=xpath, value=//pre[contains(.,'Marina Bay Residences')]}
+
+
+# Created on 2017-09-10T18:15:24.738
+Unexpected IOException with stream: [34m<span style='float: left;'>Dispaly of elementBy.xpath: //pre[contains(.,'Marina Bay Residences')]</span><span style='float: right;color:red;font-weight:bold;'>Pass</span><br>[0m
+
+
+# Created on 2017-09-10T18:15:24.741
+Unexpected IOException: 5,1,Scenario: cucumber setup,When I Search for "Marina" and Select "Marina Bay Residences"(Scenario: cucumber setup),null,null,null
+
+
+# Created on 2017-09-10T18:15:24.818
+Unexpected IOException: 8,1,Scenario: cucumber setup,When I Search for "Marina" and Select "Marina Bay Residences"(Scenario: cucumber setup),null,Verification of Existence of objectfalse,null,Verification of Existence of objectfalse,Verification of Existence of objectfalse,java.lang.AssertionError: Verification of Existence of objectfalse\000A
+
+
+# Created on 2017-09-10T18:15:24.824
+Unexpected IOException: 8,1,Scenario: cucumber setup,Scenario: cucumber setup,null,Verification of Existence of objectfalse,null,Verification of Existence of objectfalse,Verification of Existence of objectfalse,java.lang.AssertionError: Verification of Existence of objectfalse\000A
+
+
+# Created on 2017-09-10T18:15:24.833
+Unexpected IOException: 9,1,Scenario: cucumber setup,And I click on Search with maximum floor area "3000"(Scenario: cucumber setup),null,null,null
+
+
+# Created on 2017-09-10T18:15:24.841
+Unexpected IOException: 9,1,Scenario: cucumber setup,Then I should see all listings displayed are with in search criteria(Scenario: cucumber setup),null,null,null
+
+
+# Created on 2017-09-10T18:15:28.865
+Unexpected IOException: 7,1,Scenario: cucumber setup,Scenario: cucumber setup,null,chrome not reachable\000A  (Session info: chrome=61.0.3163.79)\000A  (Driver info: chromedriver=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8)\002Cplatform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 0 milliseconds\000ABuild info: version: '3.5.3'\002C revision: 'a88d25fe6b'\002C time: '2017-08-29T12:42:44.417Z'\000ASystem info: host: 'VENKAT-PC'\002C ip: '192.168.0.100'\002C os.name: 'Windows 7'\002C os.arch: 'amd64'\002C os.version: '6.1'\002C java.version: '1.8.0_65'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities [{mobileEmulationEnabled=false\002C hasTouchScreen=false\002C platform=XP\002C acceptSslCerts=true\002C webStorageEnabled=true\002C browserName=chrome\002C takesScreenshot=true\002C javascriptEnabled=true\002C platformName=XP\002C setWindowRect=true\002C unexpectedAlertBehaviour=\002C applicationCacheEnabled=false\002C rotatable=false\002C networkConnectionEnabled=false\002C chrome={chromedriverVersion=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8)\002C userDataDir=C:\005CUsers\005Cvenkat\005CAppData\005CLocal\005CTemp\005Cscoped_dir5800_11553}\002C takesHeapSnapshot=true\002C pageLoadStrategy=normal\002C unhandledPromptBehavior=\002C databaseEnabled=false\002C handlesAlerts=true\002C version=61.0.3163.79\002C browserConnectionEnabled=false\002C nativeEvents=true\002C locationContextEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: 83423ecbd3d905157eaeae25a243ba7b,null,chrome not reachable\000A  (Session info: chrome=61.0.3163.79)\000A  (Driver info: chromedriver=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8)\002Cplatform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 0 milliseconds\000ABuild info: version: '3.5.3'\002C revision: 'a88d25fe6b'\002C time: '2017-08-29T12:42:44.417Z'\000ASystem info: host: 'VENKAT-PC'\002C ip: '192.168.0.100'\002C os.name: 'Windows 7'\002C os.arch: 'amd64'\002C os.version: '6.1'\002C java.version: '1.8.0_65'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities [{mobileEmulationEnabled=false\002C hasTouchScreen=false\002C platform=XP\002C acceptSslCerts=true\002C webStorageEnabled=true\002C browserName=chrome\002C takesScreenshot=true\002C javascriptEnabled=true\002C platformName=XP\002C setWindowRect=true\002C unexpectedAlertBehaviour=\002C applicationCacheEnabled=false\002C rotatable=false\002C networkConnectionEnabled=false\002C chrome={chromedriverVersion=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8)\002C userDataDir=C:\005CUsers\005Cvenkat\005CAppData\005CLocal\005CTemp\005Cscoped_dir5800_11553}\002C takesHeapSnapshot=true\002C pageLoadStrategy=normal\002C unhandledPromptBehavior=\002C databaseEnabled=false\002C handlesAlerts=true\002C version=61.0.3163.79\002C browserConnectionEnabled=false\002C nativeEvents=true\002C locationContextEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: 83423ecbd3d905157eaeae25a243ba7b,chrome not reachable\000A  (Session info: chrome=61.0.3163.79)\000A  (Driver info: chromedriver=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8)\002Cplatform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 0 milliseconds\000ABuild info: version: '3.5.3'\002C revision: 'a88d25fe6b'\002C time: '2017-08-29T12:42:44.417Z'\000ASystem info: host: 'VENKAT-PC'\002C ip: '192.168.0.100'\002C os.name: 'Windows 7'\002C os.arch: 'amd64'\002C os.version: '6.1'\002C java.version: '1.8.0_65'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities [{mobileEmulationEnabled=false\002C hasTouchScreen=false\002C platform=XP\002C acceptSslCerts=true\002C webStorageEnabled=true\002C browserName=chrome\002C takesScreenshot=true\002C javascriptEnabled=true\002C platformName=XP\002C setWindowRect=true\002C unexpectedAlertBehaviour=\002C applicationCacheEnabled=false\002C rotatable=false\002C networkConnectionEnabled=false\002C chrome={chromedriverVersion=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8)\002C userDataDir=C:\005CUsers\005Cvenkat\005CAppData\005CLocal\005CTemp\005Cscoped_dir5800_11553}\002C takesHeapSnapshot=true\002C pageLoadStrategy=normal\002C unhandledPromptBehavior=\002C databaseEnabled=false\002C handlesAlerts=true\002C version=61.0.3163.79\002C browserConnectionEnabled=false\002C nativeEvents=true\002C locationContextEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: 83423ecbd3d905157eaeae25a243ba7b,org.openqa.selenium.WebDriverException: \000Achrome not reachable\000A  (Session info: chrome=61.0.3163.79)\000A  (Driver info: chromedriver=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8)\002Cplatform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)\000ACommand duration or timeout: 0 milliseconds\000ABuild info: version: '3.5.3'\002C revision: 'a88d25fe6b'\002C time: '2017-08-29T12:42:44.417Z'\000ASystem info: host: 'VENKAT-PC'\002C ip: '192.168.0.100'\002C os.name: 'Windows 7'\002C os.arch: 'amd64'\002C os.version: '6.1'\002C java.version: '1.8.0_65'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities [{mobileEmulationEnabled=false\002C hasTouchScreen=false\002C platform=XP\002C acceptSslCerts=true\002C webStorageEnabled=true\002C browserName=chrome\002C takesScreenshot=true\002C javascriptEnabled=true\002C platformName=XP\002C setWindowRect=true\002C unexpectedAlertBehaviour=\002C applicationCacheEnabled=false\002C rotatable=false\002C networkConnectionEnabled=false\002C chrome={chromedriverVersion=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8)\002C userDataDir=C:\005CUsers\005Cvenkat\005CAppData\005CLocal\005CTemp\005Cscoped_dir5800_11553}\002C takesHeapSnapshot=true\002C pageLoadStrategy=normal\002C unhandledPromptBehavior=\002C databaseEnabled=false\002C handlesAlerts=true\002C version=61.0.3163.79\002C browserConnectionEnabled=false\002C nativeEvents=true\002C locationContextEnabled=true\002C cssSelectorsEnabled=true}]\000ASession ID: 83423ecbd3d905157eaeae25a243ba7b\000A
+
+
+# Created on 2017-09-10T18:15:28.867
+Unexpected IOException with stream: [31mFailure in after hook:[0m[31mResults.embedScreenshot(Scenario)[0m
+
+
+# Created on 2017-09-10T18:15:28.871
+Unexpected IOException with stream: [31mMessage: [0m[31morg.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=61.0.3163.79)
+  (Driver info: chromedriver=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'VENKAT-PC', ip: '192.168.0.100', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8), userDataDir=C:\Users\venkat\AppData\Local\Temp\scoped_dir5800_11553}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=61.0.3163.79, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 83423ecbd3d905157eaeae25a243ba7b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:703)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:388)
+	at tsUtilities.SeleniumUtils.insertScreenshot(SeleniumUtils.java:150)
+	at testcases.Results.embedScreenshot(Results.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:272)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+[0m
+
+
+# Created on 2017-09-10T18:15:28.878
+Unexpected IOException with stream:       [31morg.openqa.selenium.WebDriverException: chrome not reachable
+        (Session info: chrome=61.0.3163.79)
+        (Driver info: chromedriver=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+      Command duration or timeout: 0 milliseconds
+      Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+      System info: host: 'VENKAT-PC', ip: '192.168.0.100', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8), userDataDir=C:\Users\venkat\AppData\Local\Temp\scoped_dir5800_11553}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=61.0.3163.79, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+      Session ID: 83423ecbd3d905157eaeae25a243ba7b
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+      	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+      	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+      	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+      	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+      	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:703)
+      	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:388)
+      	at tsUtilities.SeleniumUtils.insertScreenshot(SeleniumUtils.java:150)
+      	at testcases.Results.embedScreenshot(Results.java:38)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+      	at java.lang.reflect.Method.invoke(Method.java:497)
+      	at cucumber.runtime.Utils$1.call(Utils.java:40)
+      	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+      	at cucumber.runtime.Utils.invoke(Utils.java:34)
+      	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+      	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+      	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+      	at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)
+      	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)
+      	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+      	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+      	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+      	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+      	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+      	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+      	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+      	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+      	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+      	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+      	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:272)
+      	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:236)
+      	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+      	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+      	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+      	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+      [0m
+
+
+# Created on 2017-09-10T18:15:28.882
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:28.883
+Unexpected IOException with stream:   Scenario: cucumber setup                                               [90m# src/test/resources/Sample.feature:5[0m
+
+
+# Created on 2017-09-10T18:15:28.885
+Unexpected IOException with stream:     [32mGiven [0m[32mI Navigate to "[0m[32m[1mhttp://propertyguru.com.sg[0m[32m"[0m                     [90m# StepDefintions.i_Navigate_to(String)[0m
+
+
+# Created on 2017-09-10T18:15:28.886
+Unexpected IOException with stream:     [31mWhen [0m[31mI Search for "[0m[31m[1mMarina[0m[31m" and Select "[0m[31m[1mMarina Bay Residences[0m[31m"[0m        [90m# StepDefintions.i_Search_for_and_Select(String,String)[0m
+
+
+# Created on 2017-09-10T18:15:28.889
+Unexpected IOException with stream:       [31mjava.lang.AssertionError: Verification of Existence of objectfalse
+      	at org.junit.Assert.fail(Assert.java:88)
+      	at org.junit.Assert.assertTrue(Assert.java:41)
+      	at org.junit.Assert.assertFalse(Assert.java:64)
+      	at tsUtilities.SeleniumUtils.verifyObjectExists(SeleniumUtils.java:223)
+      	at testcases.StepDefintions.i_Search_for_and_Select(StepDefintions.java:52)
+      	at ?.When I Search for "Marina" and Select "Marina Bay Residences"(src/test/resources/Sample.feature:8)
+      [0m
+
+
+# Created on 2017-09-10T18:15:28.890
+Unexpected IOException with stream:     [36mAnd [0m[36mI click on Search with maximum floor area "[0m[36m[1m3000[0m[36m"[0m                 [90m# StepDefintions.i_click_on_Search_with_maximum_floor_area(String)[0m
+
+
+# Created on 2017-09-10T18:15:28.891
+Unexpected IOException with stream:     [33mThen [0m[33mI should see all listings displayed are with in search criteria[0m
+
+
+# Created on 2017-09-10T18:15:28.981
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:28.982
+Unexpected IOException with stream: [31mFailed scenarios:[0m
+
+
+# Created on 2017-09-10T18:15:28.983
+Unexpected IOException with stream: [31msrc/test/resources/Sample.feature:5 [0m
+
+# Created on 2017-09-10T18:15:28.984
+Unexpected IOException with stream: # Scenario: cucumber setup
+
+
+# Created on 2017-09-10T18:15:28.985
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:28.986
+Unexpected IOException with stream: 1
+
+# Created on 2017-09-10T18:15:28.986
+Unexpected IOException with stream:  Scenarios (
+
+# Created on 2017-09-10T18:15:28.987
+Unexpected IOException with stream: [31m1 failed[0m
+
+# Created on 2017-09-10T18:15:28.988
+Unexpected IOException with stream: )
+
+
+# Created on 2017-09-10T18:15:28.989
+Unexpected IOException with stream: 4
+
+# Created on 2017-09-10T18:15:28.989
+Unexpected IOException with stream:  Steps (
+
+# Created on 2017-09-10T18:15:28.990
+Unexpected IOException with stream: [31m1 failed[0m
+
+# Created on 2017-09-10T18:15:28.991
+Unexpected IOException with stream: , 
+
+# Created on 2017-09-10T18:15:28.992
+Unexpected IOException with stream: [36m1 skipped[0m
+
+# Created on 2017-09-10T18:15:28.992
+Unexpected IOException with stream: , 
+
+# Created on 2017-09-10T18:15:28.993
+Unexpected IOException with stream: [33m1 undefined[0m
+
+# Created on 2017-09-10T18:15:28.994
+Unexpected IOException with stream: , 
+
+# Created on 2017-09-10T18:15:28.994
+Unexpected IOException with stream: [32m1 passed[0m
+
+# Created on 2017-09-10T18:15:28.995
+Unexpected IOException with stream: )
+
+
+# Created on 2017-09-10T18:15:28.996
+Unexpected IOException with stream: 1m
+
+# Created on 2017-09-10T18:15:29.009
+Unexpected IOException with stream: 7.062s
+
+
+# Created on 2017-09-10T18:15:29.010
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.011
+Unexpected IOException with stream: java.lang.AssertionError: Verification of Existence of objectfalse
+
+# Created on 2017-09-10T18:15:29.011
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.012
+Unexpected IOException with stream: 	at org.junit.Assert.fail(Assert.java:88)
+
+# Created on 2017-09-10T18:15:29.013
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.014
+Unexpected IOException with stream: 	at org.junit.Assert.assertTrue(Assert.java:41)
+
+# Created on 2017-09-10T18:15:29.014
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.015
+Unexpected IOException with stream: 	at org.junit.Assert.assertFalse(Assert.java:64)
+
+# Created on 2017-09-10T18:15:29.015
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.016
+Unexpected IOException with stream: 	at tsUtilities.SeleniumUtils.verifyObjectExists(SeleniumUtils.java:223)
+
+# Created on 2017-09-10T18:15:29.016
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.017
+Unexpected IOException with stream: 	at testcases.StepDefintions.i_Search_for_and_Select(StepDefintions.java:52)
+
+# Created on 2017-09-10T18:15:29.018
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.018
+Unexpected IOException with stream: 	at ?.When I Search for "Marina" and Select "Marina Bay Residences"(src/test/resources/Sample.feature:8)
+
+# Created on 2017-09-10T18:15:29.019
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.020
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.021
+Unexpected IOException with stream: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=61.0.3163.79)
+  (Driver info: chromedriver=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'VENKAT-PC', ip: '192.168.0.100', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8), userDataDir=C:\Users\venkat\AppData\Local\Temp\scoped_dir5800_11553}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=61.0.3163.79, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 83423ecbd3d905157eaeae25a243ba7b
+
+# Created on 2017-09-10T18:15:29.022
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.023
+Unexpected IOException with stream: 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+
+# Created on 2017-09-10T18:15:29.023
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.024
+Unexpected IOException with stream: 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+
+# Created on 2017-09-10T18:15:29.025
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.026
+Unexpected IOException with stream: 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+
+# Created on 2017-09-10T18:15:29.027
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.027
+Unexpected IOException with stream: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+
+# Created on 2017-09-10T18:15:29.028
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.029
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+
+# Created on 2017-09-10T18:15:29.029
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.030
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+
+# Created on 2017-09-10T18:15:29.031
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.031
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+
+# Created on 2017-09-10T18:15:29.032
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.033
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+
+# Created on 2017-09-10T18:15:29.033
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.034
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+
+# Created on 2017-09-10T18:15:29.034
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.035
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+
+# Created on 2017-09-10T18:15:29.035
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.036
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+
+# Created on 2017-09-10T18:15:29.036
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.037
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+
+# Created on 2017-09-10T18:15:29.037
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.038
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:703)
+
+# Created on 2017-09-10T18:15:29.039
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.040
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:388)
+
+# Created on 2017-09-10T18:15:29.040
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.040
+Unexpected IOException with stream: 	at tsUtilities.SeleniumUtils.insertScreenshot(SeleniumUtils.java:150)
+
+# Created on 2017-09-10T18:15:29.041
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.041
+Unexpected IOException with stream: 	at testcases.Results.embedScreenshot(Results.java:38)
+
+# Created on 2017-09-10T18:15:29.041
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.041
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+# Created on 2017-09-10T18:15:29.042
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.042
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+
+# Created on 2017-09-10T18:15:29.042
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.043
+Unexpected IOException with stream: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created on 2017-09-10T18:15:29.043
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.043
+Unexpected IOException with stream: 	at java.lang.reflect.Method.invoke(Method.java:497)
+
+# Created on 2017-09-10T18:15:29.044
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.044
+Unexpected IOException with stream: 	at cucumber.runtime.Utils$1.call(Utils.java:40)
+
+# Created on 2017-09-10T18:15:29.044
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.045
+Unexpected IOException with stream: 	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+
+# Created on 2017-09-10T18:15:29.045
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.045
+Unexpected IOException with stream: 	at cucumber.runtime.Utils.invoke(Utils.java:34)
+
+# Created on 2017-09-10T18:15:29.045
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.057
+Unexpected IOException with stream: 	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+
+# Created on 2017-09-10T18:15:29.057
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.058
+Unexpected IOException with stream: 	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+
+# Created on 2017-09-10T18:15:29.058
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.058
+Unexpected IOException with stream: 	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+
+# Created on 2017-09-10T18:15:29.059
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.059
+Unexpected IOException with stream: 	at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)
+
+# Created on 2017-09-10T18:15:29.059
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.060
+Unexpected IOException with stream: 	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)
+
+# Created on 2017-09-10T18:15:29.060
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.061
+Unexpected IOException with stream: 	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+
+# Created on 2017-09-10T18:15:29.061
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.062
+Unexpected IOException with stream: 	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+
+# Created on 2017-09-10T18:15:29.062
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.063
+Unexpected IOException with stream: 	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+
+# Created on 2017-09-10T18:15:29.063
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.063
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+
+# Created on 2017-09-10T18:15:29.064
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.064
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+
+# Created on 2017-09-10T18:15:29.065
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.065
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+
+# Created on 2017-09-10T18:15:29.065
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.066
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+
+# Created on 2017-09-10T18:15:29.066
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.066
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+
+# Created on 2017-09-10T18:15:29.067
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.068
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+
+# Created on 2017-09-10T18:15:29.068
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.069
+Unexpected IOException with stream: 	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+
+# Created on 2017-09-10T18:15:29.069
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.070
+Unexpected IOException with stream: 	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+
+# Created on 2017-09-10T18:15:29.071
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.071
+Unexpected IOException with stream: 	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+
+# Created on 2017-09-10T18:15:29.072
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.072
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+
+# Created on 2017-09-10T18:15:29.073
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.073
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+
+# Created on 2017-09-10T18:15:29.073
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.074
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+
+# Created on 2017-09-10T18:15:29.074
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.075
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+
+# Created on 2017-09-10T18:15:29.075
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.075
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+
+# Created on 2017-09-10T18:15:29.076
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.076
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+
+# Created on 2017-09-10T18:15:29.077
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.077
+Unexpected IOException with stream: 	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+
+# Created on 2017-09-10T18:15:29.078
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.078
+Unexpected IOException with stream: 	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+
+# Created on 2017-09-10T18:15:29.079
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.079
+Unexpected IOException with stream: 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:272)
+
+# Created on 2017-09-10T18:15:29.079
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.080
+Unexpected IOException with stream: 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:236)
+
+# Created on 2017-09-10T18:15:29.080
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.081
+Unexpected IOException with stream: 	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+
+# Created on 2017-09-10T18:15:29.081
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.082
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+
+# Created on 2017-09-10T18:15:29.082
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.083
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+
+# Created on 2017-09-10T18:15:29.083
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.084
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+
+# Created on 2017-09-10T18:15:29.084
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.084
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.086
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.087
+Unexpected IOException with stream: You can implement missing steps with the snippets below:
+
+
+# Created on 2017-09-10T18:15:29.087
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T18:15:29.087
+Unexpected IOException with stream: @Then("^I should see all listings displayed are with in search criteria$")
+public void i_should_see_all_listings_displayed_are_with_in_search_criteria() throws Throwable {
+    // Write code here that turns the phrase above into concrete actions
+    throw new PendingException();
+}
+
+
+
+# Created on 2017-09-10T18:15:29.088
+Unexpected IOException: 2,1,org.apache.maven.surefire.junit4.JUnit4Provider,testcases.Runner,null,null,null
+
+

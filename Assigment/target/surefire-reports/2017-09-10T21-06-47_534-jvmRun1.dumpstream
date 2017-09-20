@@ -1,0 +1,452 @@
+# Created on 2017-09-10T21:08:06.945
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:386)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+# Created on 2017-09-10T21:08:21.134
+Unexpected IOException: 5,1,Scenario: Search By A Property,Then I should see all listings displayed are with in search criteria(Scenario: Search By A Property),null,null,null
+
+
+# Created on 2017-09-10T21:08:21.148
+Unexpected IOException: 8,1,Scenario: Search By A Property,Then I should see all listings displayed are with in search criteria(Scenario: Search By A Property),null,Verify all the search results are from :Marina Bay Residences,null,Verify all the search results are from :Marina Bay Residences,Verify all the search results are from :Marina Bay Residences,java.lang.AssertionError: Verify all the search results are from :Marina Bay Residences\000A
+
+
+# Created on 2017-09-10T21:08:21.150
+Unexpected IOException: 8,1,Scenario: Search By A Property,Scenario: Search By A Property,null,Verify all the search results are from :Marina Bay Residences,null,Verify all the search results are from :Marina Bay Residences,Verify all the search results are from :Marina Bay Residences,java.lang.AssertionError: Verify all the search results are from :Marina Bay Residences\000A
+
+
+# Created on 2017-09-10T21:08:21.791
+Unexpected IOException: 5,1,Scenario: Verify\0009the\0009image\0009displayed\0009on\0009listing\0009details\0009page,Scenario: Verify\0009the\0009image\0009displayed\0009on\0009listing\0009details\0009page,null,null,null
+
+
+# Created on 2017-09-10T21:08:21.796
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T21:08:21.797
+Unexpected IOException with stream:   Scenario: Search By A Property                                         [90m# src/test/resources/Sample.feature:5[0m
+
+
+# Created on 2017-09-10T21:08:21.810
+Unexpected IOException with stream:     [32mGiven [0m[32mI Navigate to "[0m[32m[1mhttp://propertyguru.com.sg[0m[32m"[0m                     [90m# StepDefintions.i_Navigate_to(String)[0m
+
+
+# Created on 2017-09-10T21:08:21.811
+Unexpected IOException with stream:     [32mWhen [0m[32mI Search for "[0m[32m[1mMarina[0m[32m" and Select "[0m[32m[1mMarina Bay Residences[0m[32m"[0m        [90m# StepDefintions.i_Search_for_and_Select(String,String)[0m
+
+
+# Created on 2017-09-10T21:08:21.812
+Unexpected IOException with stream:     [32mAnd [0m[32mI click on Search with maximum floor area "[0m[32m[1m3000[0m[32m"[0m                 [90m# StepDefintions.i_click_on_Search_with_maximum_floor_area(String)[0m
+
+
+# Created on 2017-09-10T21:08:21.814
+Unexpected IOException with stream:     [31mThen [0m[31mI should see all listings displayed are with in search criteria[0m [90m# StepDefintions.i_should_see_all_listings_displayed_are_with_in_search_criteria()[0m
+
+
+# Created on 2017-09-10T21:08:21.816
+Unexpected IOException with stream:       [31mjava.lang.AssertionError: Verify all the search results are from :Marina Bay Residences
+      	at org.junit.Assert.fail(Assert.java:88)
+      	at org.junit.Assert.assertTrue(Assert.java:41)
+      	at testcases.StepDefintions.i_should_see_all_listings_displayed_are_with_in_search_criteria(StepDefintions.java:109)
+      	at ?.Then I should see all listings displayed are with in search criteria(src/test/resources/Sample.feature:10)
+      [0m
+
+
+# Created on 2017-09-10T21:08:21.846
+Unexpected IOException with stream: S
+
+# Created on 2017-09-10T21:08:21.848
+Unexpected IOException with stream: t
+
+# Created on 2017-09-10T21:08:21.848
+Unexpected IOException with stream: a
+
+# Created on 2017-09-10T21:08:21.849
+Unexpected IOException with stream: r
+
+# Created on 2017-09-10T21:08:21.849
+Unexpected IOException with stream: t
+
+# Created on 2017-09-10T21:08:21.850
+Unexpected IOException with stream: i
+
+# Created on 2017-09-10T21:08:21.851
+Unexpected IOException with stream: n
+
+# Created on 2017-09-10T21:08:21.851
+Unexpected IOException with stream: g
+
+# Created on 2017-09-10T21:08:21.852
+Unexpected IOException with stream:  
+
+# Created on 2017-09-10T21:08:21.852
+Unexpected IOException with stream: C
+
+# Created on 2017-09-10T21:08:21.853
+Unexpected IOException with stream: h
+
+# Created on 2017-09-10T21:08:21.853
+Unexpected IOException with stream: r
+
+# Created on 2017-09-10T21:08:21.855
+Unexpected IOException with stream: o
+
+# Created on 2017-09-10T21:08:21.857
+Unexpected IOException with stream: m
+
+# Created on 2017-09-10T21:08:21.858
+Unexpected IOException with stream: e
+
+# Created on 2017-09-10T21:08:21.859
+Unexpected IOException with stream: D
+
+# Created on 2017-09-10T21:08:21.860
+Unexpected IOException with stream: r
+
+# Created on 2017-09-10T21:08:21.861
+Unexpected IOException with stream: i
+
+# Created on 2017-09-10T21:08:21.862
+Unexpected IOException with stream: v
+
+# Created on 2017-09-10T21:08:21.863
+Unexpected IOException with stream: e
+
+# Created on 2017-09-10T21:08:21.864
+Unexpected IOException with stream: r
+
+# Created on 2017-09-10T21:08:21.864
+Unexpected IOException with stream:  
+
+# Created on 2017-09-10T21:08:21.865
+Unexpected IOException with stream: 2
+
+# Created on 2017-09-10T21:08:21.865
+Unexpected IOException with stream: .
+
+# Created on 2017-09-10T21:08:21.866
+Unexpected IOException with stream: 3
+
+# Created on 2017-09-10T21:08:21.866
+Unexpected IOException with stream: 1
+
+# Created on 2017-09-10T21:08:21.866
+Unexpected IOException with stream: .
+
+# Created on 2017-09-10T21:08:21.867
+Unexpected IOException with stream: 4
+
+# Created on 2017-09-10T21:08:21.867
+Unexpected IOException with stream: 8
+
+# Created on 2017-09-10T21:08:21.867
+Unexpected IOException with stream: 8
+
+# Created on 2017-09-10T21:08:21.868
+Unexpected IOException with stream: 7
+
+# Created on 2017-09-10T21:08:21.868
+Unexpected IOException with stream: 6
+
+# Created on 2017-09-10T21:08:21.868
+Unexpected IOException with stream: 3
+
+# Created on 2017-09-10T21:08:21.869
+Unexpected IOException with stream:  
+
+# Created on 2017-09-10T21:08:21.869
+Unexpected IOException with stream: (
+
+# Created on 2017-09-10T21:08:21.869
+Unexpected IOException with stream: 0
+
+# Created on 2017-09-10T21:08:21.870
+Unexpected IOException with stream: 9
+
+# Created on 2017-09-10T21:08:21.870
+Unexpected IOException with stream: 2
+
+# Created on 2017-09-10T21:08:21.871
+Unexpected IOException with stream: d
+
+# Created on 2017-09-10T21:08:21.871
+Unexpected IOException with stream: e
+
+# Created on 2017-09-10T21:08:21.872
+Unexpected IOException with stream: 9
+
+# Created on 2017-09-10T21:08:21.873
+Unexpected IOException with stream: 9
+
+# Created on 2017-09-10T21:08:21.874
+Unexpected IOException with stream: f
+
+# Created on 2017-09-10T21:08:21.874
+Unexpected IOException with stream: 4
+
+# Created on 2017-09-10T21:08:21.874
+Unexpected IOException with stream: 8
+
+# Created on 2017-09-10T21:08:21.875
+Unexpected IOException with stream: a
+
+# Created on 2017-09-10T21:08:21.875
+Unexpected IOException with stream: 3
+
+# Created on 2017-09-10T21:08:21.875
+Unexpected IOException with stream: 0
+
+# Created on 2017-09-10T21:08:21.876
+Unexpected IOException with stream: 0
+
+# Created on 2017-09-10T21:08:21.876
+Unexpected IOException with stream: 3
+
+# Created on 2017-09-10T21:08:21.876
+Unexpected IOException with stream: 2
+
+# Created on 2017-09-10T21:08:21.876
+Unexpected IOException with stream: 3
+
+# Created on 2017-09-10T21:08:21.877
+Unexpected IOException with stream: e
+
+# Created on 2017-09-10T21:08:21.877
+Unexpected IOException with stream: c
+
+# Created on 2017-09-10T21:08:21.877
+Unexpected IOException with stream: f
+
+# Created on 2017-09-10T21:08:21.878
+Unexpected IOException with stream: 8
+
+# Created on 2017-09-10T21:08:21.878
+Unexpected IOException with stream: c
+
+# Created on 2017-09-10T21:08:21.878
+Unexpected IOException with stream: 2
+
+# Created on 2017-09-10T21:08:21.878
+Unexpected IOException with stream: a
+
+# Created on 2017-09-10T21:08:21.879
+Unexpected IOException with stream: 4
+
+# Created on 2017-09-10T21:08:21.879
+Unexpected IOException with stream: e
+
+# Created on 2017-09-10T21:08:21.879
+Unexpected IOException with stream: 2
+
+# Created on 2017-09-10T21:08:21.880
+Unexpected IOException with stream: e
+
+# Created on 2017-09-10T21:08:21.880
+Unexpected IOException with stream: 7
+
+# Created on 2017-09-10T21:08:21.881
+Unexpected IOException with stream: c
+
+# Created on 2017-09-10T21:08:21.881
+Unexpected IOException with stream: a
+
+# Created on 2017-09-10T21:08:21.882
+Unexpected IOException with stream: b
+
+# Created on 2017-09-10T21:08:21.882
+Unexpected IOException with stream: 5
+
+# Created on 2017-09-10T21:08:21.883
+Unexpected IOException with stream: 1
+
+# Created on 2017-09-10T21:08:21.883
+Unexpected IOException with stream: d
+
+# Created on 2017-09-10T21:08:21.884
+Unexpected IOException with stream: e
+
+# Created on 2017-09-10T21:08:21.885
+Unexpected IOException with stream: 5
+
+# Created on 2017-09-10T21:08:21.885
+Unexpected IOException with stream: b
+
+# Created on 2017-09-10T21:08:21.885
+Unexpected IOException with stream: a
+
+# Created on 2017-09-10T21:08:21.886
+Unexpected IOException with stream: 8
+
+# Created on 2017-09-10T21:08:21.886
+Unexpected IOException with stream: )
+
+# Created on 2017-09-10T21:08:21.887
+Unexpected IOException with stream:  
+
+# Created on 2017-09-10T21:08:21.887
+Unexpected IOException with stream: o
+
+# Created on 2017-09-10T21:08:21.888
+Unexpected IOException with stream: n
+
+# Created on 2017-09-10T21:08:21.888
+Unexpected IOException with stream:  
+
+# Created on 2017-09-10T21:08:21.889
+Unexpected IOException with stream: p
+
+# Created on 2017-09-10T21:08:21.889
+Unexpected IOException with stream: o
+
+# Created on 2017-09-10T21:08:21.890
+Unexpected IOException with stream: r
+
+# Created on 2017-09-10T21:08:21.891
+Unexpected IOException with stream: t
+
+# Created on 2017-09-10T21:08:21.891
+Unexpected IOException with stream:  
+
+# Created on 2017-09-10T21:08:21.891
+Unexpected IOException with stream: 2
+
+# Created on 2017-09-10T21:08:21.892
+Unexpected IOException with stream: 4
+
+# Created on 2017-09-10T21:08:21.892
+Unexpected IOException with stream: 4
+
+# Created on 2017-09-10T21:08:21.892
+Unexpected IOException with stream: 3
+
+# Created on 2017-09-10T21:08:21.892
+Unexpected IOException with stream: 0
+
+# Created on 2017-09-10T21:08:21.893
+Unexpected IOException with stream: 
+
+# Created on 2017-09-10T21:08:21.893
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T21:08:21.893
+Unexpected IOException with stream: O
+
+# Created on 2017-09-10T21:08:21.894
+Unexpected IOException with stream: n
+
+# Created on 2017-09-10T21:08:21.894
+Unexpected IOException with stream: l
+
+# Created on 2017-09-10T21:08:21.894
+Unexpected IOException with stream: y
+
+# Created on 2017-09-10T21:08:21.894
+Unexpected IOException with stream:  
+
+# Created on 2017-09-10T21:08:21.895
+Unexpected IOException with stream: l
+
+# Created on 2017-09-10T21:08:21.895
+Unexpected IOException with stream: o
+
+# Created on 2017-09-10T21:08:21.895
+Unexpected IOException with stream: c
+
+# Created on 2017-09-10T21:08:21.896
+Unexpected IOException with stream: a
+
+# Created on 2017-09-10T21:08:21.896
+Unexpected IOException with stream: l
+
+# Created on 2017-09-10T21:08:21.896
+Unexpected IOException with stream:  
+
+# Created on 2017-09-10T21:08:21.896
+Unexpected IOException with stream: c
+
+# Created on 2017-09-10T21:08:21.897
+Unexpected IOException with stream: o
+
+# Created on 2017-09-10T21:08:21.897
+Unexpected IOException with stream: n
+
+# Created on 2017-09-10T21:08:21.897
+Unexpected IOException with stream: n
+
+# Created on 2017-09-10T21:08:21.898
+Unexpected IOException with stream: e
+
+# Created on 2017-09-10T21:08:21.898
+Unexpected IOException with stream: c
+
+# Created on 2017-09-10T21:08:21.898
+Unexpected IOException with stream: t
+
+# Created on 2017-09-10T21:08:21.898
+Unexpected IOException with stream: i
+
+# Created on 2017-09-10T21:08:21.899
+Unexpected IOException with stream: o
+
+# Created on 2017-09-10T21:08:21.899
+Unexpected IOException with stream: n
+
+# Created on 2017-09-10T21:08:21.899
+Unexpected IOException with stream: s
+
+# Created on 2017-09-10T21:08:21.899
+Unexpected IOException with stream:  
+
+# Created on 2017-09-10T21:08:21.900
+Unexpected IOException with stream: a
+
+# Created on 2017-09-10T21:08:21.900
+Unexpected IOException with stream: r
+
+# Created on 2017-09-10T21:08:21.900
+Unexpected IOException with stream: e
+
+# Created on 2017-09-10T21:08:21.900
+Unexpected IOException with stream:  
+
+# Created on 2017-09-10T21:08:21.901
+Unexpected IOException with stream: a
+
+# Created on 2017-09-10T21:08:21.901
+Unexpected IOException with stream: l
+
+# Created on 2017-09-10T21:08:21.901
+Unexpected IOException with stream: l
+
+# Created on 2017-09-10T21:08:21.902
+Unexpected IOException with stream: o
+
+# Created on 2017-09-10T21:08:21.902
+Unexpected IOException with stream: w
+
+# Created on 2017-09-10T21:08:21.902
+Unexpected IOException with stream: e
+
+# Created on 2017-09-10T21:08:21.902
+Unexpected IOException with stream: d
+
+# Created on 2017-09-10T21:08:21.903
+Unexpected IOException with stream: .
+
+# Created on 2017-09-10T21:08:21.903
+Unexpected IOException with stream: 
+
+# Created on 2017-09-10T21:08:21.904
+Unexpected IOException with stream: 
+
+
+# Created on 2017-09-10T21:08:23.947
+Unexpected IOException with stream: Sep 10, 2017 9:08:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+
+

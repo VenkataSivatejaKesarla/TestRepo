@@ -1,0 +1,270 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2536663,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Results.before(Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Search By A Property",
+        "description": "",
+        "id": "to-test-my-cucumber-test-is-running;search-by-a-property",
+        "after": [
+          {
+            "result": {
+              "duration": 254864,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Results.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "output": [
+              "\u003cspan style\u003d\u0027float: left;\u0027\u003eDispaly of elementBy.xpath: //input[@placeholder\u003d\u0027Type or Select Location\u0027]\u003c/span\u003e\u003cspan style\u003d\u0027float: right;color:green;font-weight:bold;\u0027\u003ePass\u003c/span\u003e\u003cbr\u003e"
+            ],
+            "result": {
+              "duration": 36329748279,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I Navigate to \"http://propertyguru.com.sg\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://propertyguru.com.sg",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefintions.i_Navigate_to(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4384336574,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I Search for \"Marina\" and Select \"Marina Bay Residences\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Marina",
+                  "offset": 14
+                },
+                {
+                  "val": "Marina Bay Residences",
+                  "offset": 34
+                }
+              ],
+              "location": "StepDefintions.i_Search_for_and_Select(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "\u003cspan style\u003d\u0027float: left;\u0027\u003eDispaly of elementBy.xpath: //ul[@class\u003d\u0027listing-items\u0027]\u003c/span\u003e\u003cspan style\u003d\u0027float: right;color:green;font-weight:bold;\u0027\u003ePass\u003c/span\u003e\u003cbr\u003e"
+            ],
+            "result": {
+              "duration": 13898797736,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click on Search with maximum floor area \"3000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3000",
+                  "offset": 43
+                }
+              ],
+              "location": "StepDefintions.i_click_on_Search_with_maximum_floor_area(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "output": [
+              "\u003cspan style\u003d\u0027float: left;\u0027\u003ePage No:1Verify if the search results are from :Marina Bay Residences\u003c/span\u003e\u003cspan style\u003d\u0027float: right;color:green;font-weight:bold;\u0027\u003ePass\u003c/span\u003e\u003cbr\u003e",
+              "\u003cspan style\u003d\u0027float: left;\u0027\u003ePage No:1Verify all the search results are with in :3000Sqft\u003c/span\u003e\u003cspan style\u003d\u0027float: right;color:green;font-weight:bold;\u0027\u003ePass\u003c/span\u003e\u003cbr\u003e",
+              "\u003cspan style\u003d\u0027float: left;\u0027\u003ePage No:2Verify if the search results are from :Marina Bay Residences\u003c/span\u003e\u003cspan style\u003d\u0027float: right;color:green;font-weight:bold;\u0027\u003ePass\u003c/span\u003e\u003cbr\u003e",
+              "\u003cspan style\u003d\u0027float: left;\u0027\u003ePage No:2Verify all the search results are with in :3000Sqft\u003c/span\u003e\u003cspan style\u003d\u0027float: right;color:green;font-weight:bold;\u0027\u003ePass\u003c/span\u003e\u003cbr\u003e",
+              "\u003cspan style\u003d\u0027float: left;\u0027\u003ePage No:3Verify if the search results are from :Marina Bay Residences\u003c/span\u003e\u003cspan style\u003d\u0027float: right;color:green;font-weight:bold;\u0027\u003ePass\u003c/span\u003e\u003cbr\u003e",
+              "\u003cspan style\u003d\u0027float: left;\u0027\u003ePage No:3Verify all the search results are with in :3000Sqft\u003c/span\u003e\u003cspan style\u003d\u0027float: right;color:green;font-weight:bold;\u0027\u003ePass\u003c/span\u003e\u003cbr\u003e",
+              "\u003cspan style\u003d\u0027float: left;\u0027\u003ePage No:4Verify if the search results are from :Marina Bay Residences\u003c/span\u003e\u003cspan style\u003d\u0027float: right;color:green;font-weight:bold;\u0027\u003ePass\u003c/span\u003e\u003cbr\u003e",
+              "\u003cspan style\u003d\u0027float: left;\u0027\u003ePage No:4Verify all the search results are with in :3000Sqft\u003c/span\u003e\u003cspan style\u003d\u0027float: right;color:green;font-weight:bold;\u0027\u003ePass\u003c/span\u003e\u003cbr\u003e",
+              "\u003cspan style\u003d\u0027float: left;\u0027\u003ePage No:5Verify if the search results are from :Marina Bay Residences\u003c/span\u003e\u003cspan style\u003d\u0027float: right;color:green;font-weight:bold;\u0027\u003ePass\u003c/span\u003e\u003cbr\u003e",
+              "\u003cspan style\u003d\u0027float: left;\u0027\u003ePage No:5Verify all the search results are with in :3000Sqft\u003c/span\u003e\u003cspan style\u003d\u0027float: right;color:green;font-weight:bold;\u0027\u003ePass\u003c/span\u003e\u003cbr\u003e",
+              "\u003cspan style\u003d\u0027float: left;\u0027\u003ePage No:6Verify if the search results are from :Marina Bay Residences\u003c/span\u003e\u003cspan style\u003d\u0027float: right;color:green;font-weight:bold;\u0027\u003ePass\u003c/span\u003e\u003cbr\u003e",
+              "\u003cspan style\u003d\u0027float: left;\u0027\u003ePage No:6Verify all the search results are with in :3000Sqft\u003c/span\u003e\u003cspan style\u003d\u0027float: right;color:green;font-weight:bold;\u0027\u003ePass\u003c/span\u003e\u003cbr\u003e",
+              "\u003cspan style\u003d\u0027float: left;\u0027\u003ePage No:7Verify if the search results are from :Marina Bay Residences\u003c/span\u003e\u003cspan style\u003d\u0027float: right;color:green;font-weight:bold;\u0027\u003ePass\u003c/span\u003e\u003cbr\u003e",
+              "\u003cspan style\u003d\u0027float: left;\u0027\u003ePage No:7Verify all the search results are with in :3000Sqft\u003c/span\u003e\u003cspan style\u003d\u0027float: right;color:green;font-weight:bold;\u0027\u003ePass\u003c/span\u003e\u003cbr\u003e",
+              "\u003cspan style\u003d\u0027float: left;\u0027\u003ePage No:8Verify if the search results are from :Marina Bay Residences\u003c/span\u003e\u003cspan style\u003d\u0027float: right;color:green;font-weight:bold;\u0027\u003ePass\u003c/span\u003e\u003cbr\u003e",
+              "\u003cspan style\u003d\u0027float: left;\u0027\u003ePage No:8Verify all the search results are with in :3000Sqft\u003c/span\u003e\u003cspan style\u003d\u0027float: right;color:green;font-weight:bold;\u0027\u003ePass\u003c/span\u003e\u003cbr\u003e"
+            ],
+            "result": {
+              "duration": 62116716022,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should see all listings displayed are with in search criteria",
+            "match": {
+              "location": "StepDefintions.i_should_see_all_listings_displayed_are_with_in_search_criteria()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 143682,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Results.before(Scenario)"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Verify\tthe\timage\tdisplayed\ton\tlisting\tdetails\tpage",
+        "description": "",
+        "id": "to-test-my-cucumber-test-is-running;verify-the-image-displayed-on-listing-details-page",
+        "after": [
+          {
+            "result": {
+              "duration": 153517,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Results.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "output": [
+              "\u003cspan style\u003d\u0027float: left;\u0027\u003eDispaly of elementBy.xpath: //input[@placeholder\u003d\u0027Type or Select Location\u0027]\u003c/span\u003e\u003cspan style\u003d\u0027float: right;color:green;font-weight:bold;\u0027\u003ePass\u003c/span\u003e\u003cbr\u003e"
+            ],
+            "result": {
+              "duration": 8095401549,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I Navigate to \"http://propertyguru.com.sg\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://propertyguru.com.sg",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefintions.i_Navigate_to(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3000134701,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I Select the Listing Type as \"Rent\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Rent",
+                  "offset": 30
+                }
+              ],
+              "location": "StepDefintions.i_Select_the_Listing_Type_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5750863051,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I Select the maximum price as \"15,000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "15,000",
+                  "offset": 31
+                }
+              ],
+              "location": "StepDefintions.i_Select_the_maximum_price_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "output": [
+              "\u003cspan style\u003d\u0027float: left;\u0027\u003eDispaly of elementBy.xpath: //ul[@class\u003d\u0027listing-items\u0027]\u003c/span\u003e\u003cspan style\u003d\u0027float: right;color:green;font-weight:bold;\u0027\u003ePass\u003c/span\u003e\u003cbr\u003e"
+            ],
+            "result": {
+              "duration": 29089209131,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I click on Search with photos option",
+            "match": {
+              "location": "StepDefintions.i_click_on_Search_with_photos_option()"
+            },
+            "keyword": "And "
+          },
+          {
+            "output": [
+              "\u003cspan style\u003d\u0027float: left;\u0027\u003eImage validation is successful forhttps://sg1-cdn.pgimgs.com/listing/20785848/UPHO.91914668.V800/122-Bedok-Reservoir-Road-Bedok-Upper-East-Coast-Singapore.jpg\u003c/span\u003e\u003cspan style\u003d\u0027float: right;color:green;font-weight:bold;\u0027\u003ePass\u003c/span\u003e\u003cbr\u003e",
+              "\u003cspan style\u003d\u0027float: left;\u0027\u003eImage validation is successful forhttps://sg1-cdn.pgimgs.com/listing/20785848/UPHO.91914664.V800/122-Bedok-Reservoir-Road-Bedok-Upper-East-Coast-Singapore.jpg\u003c/span\u003e\u003cspan style\u003d\u0027float: right;color:green;font-weight:bold;\u0027\u003ePass\u003c/span\u003e\u003cbr\u003e",
+              "\u003cspan style\u003d\u0027float: left;\u0027\u003eImage validation is successful forhttps://sg1-cdn.pgimgs.com/listing/20785848/UPHO.91914666.V800/122-Bedok-Reservoir-Road-Bedok-Upper-East-Coast-Singapore.jpg\u003c/span\u003e\u003cspan style\u003d\u0027float: right;color:green;font-weight:bold;\u0027\u003ePass\u003c/span\u003e\u003cbr\u003e",
+              "\u003cspan style\u003d\u0027float: left;\u0027\u003eImage validation is successful forhttps://sg1-cdn.pgimgs.com/listing/20785848/UPHO.91914670.V800/122-Bedok-Reservoir-Road-Bedok-Upper-East-Coast-Singapore.jpg\u003c/span\u003e\u003cspan style\u003d\u0027float: right;color:green;font-weight:bold;\u0027\u003ePass\u003c/span\u003e\u003cbr\u003e",
+              "\u003cspan style\u003d\u0027float: left;\u0027\u003eImage validation is successful forhttps://sg2-cdn.pgimgs.com/listing/20785848/UPHO.91914671.V800/122-Bedok-Reservoir-Road-Bedok-Upper-East-Coast-Singapore.jpg\u003c/span\u003e\u003cspan style\u003d\u0027float: right;color:green;font-weight:bold;\u0027\u003ePass\u003c/span\u003e\u003cbr\u003e",
+              "\u003cspan style\u003d\u0027float: left;\u0027\u003eImage validation is successful forhttps://sg2-cdn.pgimgs.com/listing/20785848/UPHO.91914675.V800/122-Bedok-Reservoir-Road-Bedok-Upper-East-Coast-Singapore.jpg\u003c/span\u003e\u003cspan style\u003d\u0027float: right;color:green;font-weight:bold;\u0027\u003ePass\u003c/span\u003e\u003cbr\u003e",
+              "\u003cspan style\u003d\u0027float: left;\u0027\u003eImage validation is successful forhttps://sg2-cdn.pgimgs.com/listing/20785848/UPHO.91914677.V800/122-Bedok-Reservoir-Road-Bedok-Upper-East-Coast-Singapore.jpg\u003c/span\u003e\u003cspan style\u003d\u0027float: right;color:green;font-weight:bold;\u0027\u003ePass\u003c/span\u003e\u003cbr\u003e",
+              "\u003cspan style\u003d\u0027float: left;\u0027\u003eImage validation is successful forhttps://sg2-cdn.pgimgs.com/listing/20785848/UPHO.91914679.V800/122-Bedok-Reservoir-Road-Bedok-Upper-East-Coast-Singapore.jpg\u003c/span\u003e\u003cspan style\u003d\u0027float: right;color:green;font-weight:bold;\u0027\u003ePass\u003c/span\u003e\u003cbr\u003e",
+              "\u003cspan style\u003d\u0027float: left;\u0027\u003eImage validation is successful forhttps://sg1-cdn.pgimgs.com/listing/20785848/UPHO.91914680.V800/122-Bedok-Reservoir-Road-Bedok-Upper-East-Coast-Singapore.jpg\u003c/span\u003e\u003cspan style\u003d\u0027float: right;color:green;font-weight:bold;\u0027\u003ePass\u003c/span\u003e\u003cbr\u003e",
+              "\u003cspan style\u003d\u0027float: left;\u0027\u003eImage validation is successful forhttps://sg2-cdn.pgimgs.com/property/3541/PPHO.3194795.V800/122-Bedok-Reservoir-Road-Bedok-Upper-East-Coast-Singapore.jpg\u003c/span\u003e\u003cspan style\u003d\u0027float: right;color:green;font-weight:bold;\u0027\u003ePass\u003c/span\u003e\u003cbr\u003e",
+              "\u003cspan style\u003d\u0027float: left;\u0027\u003eImage validation is successful forhttps://sg2-cdn.pgimgs.com/property/3541/PPHO.3194797.V800/122-Bedok-Reservoir-Road-Bedok-Upper-East-Coast-Singapore.jpg\u003c/span\u003e\u003cspan style\u003d\u0027float: right;color:green;font-weight:bold;\u0027\u003ePass\u003c/span\u003e\u003cbr\u003e",
+              "\u003cspan style\u003d\u0027float: left;\u0027\u003eImage validation is successful forhttps://sg2-cdn.pgimgs.com/property/3541/PPHO.3194799.V800/122-Bedok-Reservoir-Road-Bedok-Upper-East-Coast-Singapore.jpg\u003c/span\u003e\u003cspan style\u003d\u0027float: right;color:green;font-weight:bold;\u0027\u003ePass\u003c/span\u003e\u003cbr\u003e",
+              "\u003cspan style\u003d\u0027float: left;\u0027\u003eImage validation is successful forhttps://sg2-cdn.pgimgs.com/listing/20785848/UFLOO.91914697.V550.jpg\u003c/span\u003e\u003cspan style\u003d\u0027float: right;color:green;font-weight:bold;\u0027\u003ePass\u003c/span\u003e\u003cbr\u003e",
+              "\u003cspan style\u003d\u0027float: left;\u0027\u003eImage validation is successful forhttps://sg1-cdn.pgimgs.com/listing/20785848/UPHO.91914674.V800/122-Bedok-Reservoir-Road-Bedok-Upper-East-Coast-Singapore.jpg\u003c/span\u003e\u003cspan style\u003d\u0027float: right;color:green;font-weight:bold;\u0027\u003ePass\u003c/span\u003e\u003cbr\u003e"
+            ],
+            "result": {
+              "duration": 62130551784,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "All the images in first listing should display properly",
+            "match": {
+              "location": "StepDefintions.all_the_images_in_first_listing_should_display_properly()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "To test my cucumber test is running",
+    "description": "I want to run a sample feature file.",
+    "id": "to-test-my-cucumber-test-is-running",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Sample.feature"
+  }
+]
